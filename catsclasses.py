@@ -7,11 +7,24 @@ class Cat:
 
 
 # 1 Instantiate the Cat object with 3 cats
+BagOfCats = []
+
+BagOfCats.append(Cat("Milo", 5))
+BagOfCats.append(Cat("Luke", 3))
+BagOfCats.append(Cat("Olivia", 9))
 
 
 
 # 2 Create a function that finds the oldest cat
 
+maxage=0
+for i in BagOfCats:
+     if i.age > maxage:
+         maxage = i.age
+         oldestcat = i.name
+
 
 
 # 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
+
+print(f"The oldest cat is {maxage} years old and it\'s name is {oldestcat}.")
