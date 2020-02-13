@@ -1,4 +1,4 @@
-import calcfunctions as x
+import calcresources.calcfunctions as x
 
 print(x.sumcalc(6,9))
 print(x.rescalc(22920,928))
